@@ -30,3 +30,37 @@ body {
 .dropdown-toggle {
     background-color: var(--secondary);
 }
+
+.carouselExampleCaptions {
+    height: 80vh;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-item img {
+    height: 70vh;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.specials {
+    height: 80vh;
+    margin-top: 2vw;
+}
+
+.specials .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.specials .card-img-top {
+    width: 15vw;
+}
+
+.specials .card-title {
+    font-size: 1.1vw;
+}
