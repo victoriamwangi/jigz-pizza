@@ -109,3 +109,43 @@ body {
 }
 
 .modal .pizza-infor {}
+
+.footer {
+    height: 30vh;
+    background-color: #1e1d13;
+    color: white;
+}
+
+#logo {
+    padding-left: 6vw;
+}
+
+.footer .logo {
+    color: var(--primary);
+    font-size: 2vw;
+}
+
+.footer #logo span {
+    color: var(--primary);
+}
+
+.footer li {
+    list-style: none;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+.footer i {
+    font-size: 1.1vw;
+}
+
+.copyright {
+    background-color: #1e1d13;
+    color: white;
+    text-align: center;
+}
