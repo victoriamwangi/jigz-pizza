@@ -14,47 +14,88 @@
 </head>
 
 <body>
-    <form action="" class="shadow radius c-flex">
-        <p>ORDER</p>
-        <div class="image">
-            <img src="/images/beef.jpg" alt="" />
+    <div class="container-fluid c-flex">
+        <form action="" class="shadow radius c-flex">
+            <p>ORDER</p>
+            <div class="image">
+                <img src="/images/beef.jpg" alt="" />
+            </div>
+
+            <div class="pizza-infor r-flex">
+                <select class="form-select form-select-sm" id="size" aria-label=".form-select-sm example">
+            <option value="1">Small</option>
+            <option selected value="2">Medium</option>
+            <option value="3">Large</option>
+          </select>
+                <select class="form-select form-select-sm" id="crust" aria-label=".form-select-sm example">
+            <option value="1">Crispy</option>
+            <option selected value="2">Stuffed</option>
+            <option value="3">Gluten-free</option>
+          </select>
+                <select class="form-select form-select-sm" id="toppings" aria-label=".form-select-sm example">
+            <option selected value="1">Pepperoni</option>
+            <option value="3">Extra Chesse</option>
+            <option value="3">Chicken</option>
+          </select>
+            </div>
+            <ul id="cart"></ul>
+            <div class="btn btn-success" id="add">ADD</div>
+        </form>
+        <table id="pizza_table">
+            <tr>
+                <th>SIZE</th>
+                <th>CRUST</th>
+                <th>TOPPINGS</th>
+                <th>PRICE</th>
+            </tr>
+            <tr></tr>
+        </table>
+        <div class="btn btn-success submit">SUBMIT</div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="checkout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">CHECK OUT</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="total_div">
+                            <p> Total: </p>
+                            <p class="total"></p>
+                            <p>Would you like a delivery at an additinal fee of Ksh 150?</p>
+                            <button class="btn btn-success" id="checkout_yes">YES</button>
+                            <button class="btn btn-danger" id="checkout_no">NO</button>
+                        </div>
+
+                        <div class="grand_div">
+                            <div class="form-group">
+                                <p id="final_total">Grand Total:</p>
+                                <label for="">LOCATION</label>
+                                <input type="text" name="" id="locale" class="form-control" placeholder="" aria-describedby="helpId">
+                                <button class="btn btn-success" id="final_btn">SUBMIT</button>
+
+
+                            </div>
+                        </div>
+                        <div class="final">
+                            <p>Total</p>
+                            <p class="total"></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="pizza-infor r-flex">
-            <select class="form-select form-select-sm" id="size" aria-label=".form-select-sm example">
-          <option value="1">Small</option>
-          <option selected value="2">Medium</option>
-          <option value="3">Large</option>
-        </select>
-            <select class="form-select form-select-sm" id="crust" aria-label=".form-select-sm example">
-          <option value="1">Crispy</option>
-          <option selected value="2">Stuffed</option>
-          <option value="3">Gluten-free</option>
-        </select>
-            <select class="form-select form-select-sm" id="toppings" aria-label=".form-select-sm example">
-          <option selected value="1">Pepperoni</option>
-          <option value="2">Sausage</option>
-          <option value="3">Bacon</option>
-          <option value="3">Extra Chesse</option>
-          <option value="3">Chicken</option>
-        </select>
-        </div>
-        <ul id="cart"></ul>
-        <div class="btn btn-success" id="add">ADD</div>
-    </form>
-    <table id="pizza_table">
-        <tr>
-            <th>SIZE</th>
-            <th>CRUST</th>
-            <th>TOPPINGS</th>
-            <th>PRICE</th>
-        </tr>
-        <tr></tr>
-    </table>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/script.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

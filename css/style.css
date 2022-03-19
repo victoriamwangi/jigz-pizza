@@ -127,6 +127,23 @@ tr {
     height: 2vw;
 }
 
+.submit {
+    display: none;
+    margin-top: 1vw;
+}
+
+.grand_div {
+    display: none;
+}
+
+.total_div {
+    display: none;
+}
+
+.final {
+    display: none;
+}
+
 
 /* MODAL  */
 

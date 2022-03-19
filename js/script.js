@@ -1,3 +1,14 @@
+function Pizza(size, crust, topping) {
+    this.size = size;
+    this.crust = crust;
+    this.toppings = topping;
+}
+
+var total = function(sizeprice, crustprice, toppinsprice) {
+    return (sizeprice + crustprice + toppinsprice);
+}
+
+
 $(document).ready(function() {
     $("#pizzas").click(function() {
         $('#staticBackdrop').modal("show");
@@ -19,15 +30,33 @@ $(document).ready(function() {
             '<td>' + '<p>' + "hehe" + '</p>' + '<td>' +
             '</tr>'
         )
+        $('.submit').show()
 
-
+    });
+    $('.submit').click(function() {
+        $('#checkout').modal('show');
+        $('.total_div   ').show();
 
     })
-});
-// var toppings = ["beef", "fruity", "vegan", "chicken", "aragula"]
+    $('#checkout_yes').click(function() {
+        $('.grand_div').show();
+        $('.total_div').hide();
+        $('#final_btn').click(function() {
+            $('.grand_div').hide();
+            $('.final').show();
+            var location = $("#locale").val();
+            $('.final').append(
+                '<p>' + "YOur order will be delivered to" + " " + location + '</p>'
+            )
+        })
 
-function Pizza(size, crust, topping) {
-    this.size = size;
-    this.crust = crust;
-    this.toppings = topping;
-}
+    });
+
+    $('#checkout_no').click(function() {
+        $('.total_div').hide();
+        $('.grand_div').hide();
+        $('.final').show();
+    });
+});
+
+// var toppings = ["beef", "fruity", "vegan", "chicken", "aragula"]
