@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORDER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <form action="" class="shadow radius c-flex">
+        <p>ORDER</p>
+        <div class="image">
+            <img src="/images/beef.jpg" alt="" />
+        </div>
+
+        <div class="pizza-infor r-flex">
+            <select class="form-select form-select-sm" id="size" aria-label=".form-select-sm example">
+          <option value="1">Small</option>
+          <option selected value="2">Medium</option>
+          <option value="3">Large</option>
+        </select>
+            <select class="form-select form-select-sm" id="crust" aria-label=".form-select-sm example">
+          <option value="1">Crispy</option>
+          <option selected value="2">Stuffed</option>
+          <option value="3">Gluten-free</option>
+        </select>
+            <select class="form-select form-select-sm" id="toppings" aria-label=".form-select-sm example">
+          <option value="1">Pepperoni</option>
+          <option value="2">Sausage</option>
+          <option value="3">Bacon</option>
+          <option selected value="3">Extra Chesse</option>
+          <option value="3">Chicken</option>
+        </select>
+        </div>
+        <ul id="cart"></ul>
+        <div class="btn btn-success" id="add">ADD</div>
+    </form>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

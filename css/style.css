@@ -27,8 +27,9 @@ body {
     padding-left: 30vw;
 }
 
-.dropdown-toggle {
+#order {
     background-color: var(--secondary);
+    border-radius: 20px;
 }
 
 .carouselExampleCaptions {
@@ -94,12 +95,30 @@ body {
     padding-left: 3vw;
 }
 
+form {
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+    height: 40vw;
+}
+
+form .image img {
+    width: 30vw !important;
+    height: 20vw;
+    object-fit: cover;
+    margin-bottom: 2vw;
+}
+
+form .pizza-infor option {
+    width: 4vw !important;
+}
+
 
 /* MODAL  */
 
-.modal {
-    width: 80vw !important;
-    height: 40vw;
+#staticBackdrop {
+    width: 120vw !important;
+    height: 90vw;
     display: none;
 }
 
@@ -107,8 +126,6 @@ body {
     width: 30vw;
     height: 20vw;
 }
-
-.modal .pizza-infor {}
 
 .footer {
     height: 30vh;
@@ -148,4 +165,16 @@ body {
     background-color: #1e1d13;
     color: white;
     text-align: center;
+}
+
+@media (min-width: 375px) and (max-width: 912px) {
+    .specials {
+        display: none;
+    }
+    .menu .card-img-top {
+        width: 40vw;
+        height: 40vw;
+        object-fit: cover;
+    }
+    .menu .card {}
 }
