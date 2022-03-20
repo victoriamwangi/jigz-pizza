@@ -16,7 +16,7 @@
 ## Description
 This is a website that allows a user to order pizza by choosing their preferences such as the size, type of crust and toppings.It has two pagee: the landing page with images of pizzas and different types of toppings available, the second page contains the orders page where the user gets to choose the size, crust and toppings.
 ## Demo
-Here is a working live demo: https://victoriamwangi.github.io/Delani-Studio/
+Here is a working live demo: https://victoriamwangi.github.io/jigz-pizza/
 ## Installation
 
 To clone this repo run: git clone https://github.com/victoriamwangi/jigz-pizza.git
