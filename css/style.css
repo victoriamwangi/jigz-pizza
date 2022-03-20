@@ -118,7 +118,6 @@ form .pizza-infor option {
 
 #add2 {
     display: none;
-    background-color: var(--primary);
 }
 
 table {
@@ -145,6 +144,11 @@ tr {
     display: none;
 }
 
+.final .fa-circle-check {
+    color: var(--secondary);
+    font-size: 2vw;
+}
+
 
 /* MODAL  */
 
@@ -152,6 +156,11 @@ tr {
     width: 120vw !important;
     height: 90vw;
     display: none;
+}
+
+.modal-title {
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .modal .img img {

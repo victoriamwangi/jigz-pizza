@@ -15,6 +15,9 @@ var sizePrice;
 // var totalPrice;
 
 $(document).ready(function() {
+    $('#example-includeSelectAllOption').multiselect({
+        includeSelectAllOption: true
+    });
     $("#pizzas").click(function() {
         $('#staticBackdrop').modal("show");
     });
@@ -25,6 +28,7 @@ $(document).ready(function() {
         sizeChosen = $("#size :selected").text();
         crustChosen = $('#crust :selected').text();
         toppingsChosen = $('#toppings :selected').text();
+
 
         if (sizeChosen == "Small") {
             sizePrice = 500;
