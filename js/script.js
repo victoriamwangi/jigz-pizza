@@ -1,4 +1,4 @@
-function Pizza(size, crust, topping) {
+function Pizza(size, crust, topping, sum) {
     this.size = size;
     this.crust = crust;
     this.toppings = topping;
@@ -7,11 +7,12 @@ var total = function(sizeprice, crustprice, toppinsprice) {
     return (sizeprice + crustprice + toppinsprice);
 
 };
+
 var price;
 var sizeChosen;
 var sizePrice;
 
-
+// var totalPrice;
 
 $(document).ready(function() {
     $("#pizzas").click(function() {
@@ -91,6 +92,8 @@ $(document).ready(function() {
         $('.total_div').hide();
         $('.grand_div').hide();
         $('.final').show();
+        $('.total').innerText = totalPrice;
+
     });
 });
 

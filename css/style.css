@@ -116,6 +116,11 @@ form .pizza-infor option {
     width: 4vw !important;
 }
 
+#add2 {
+    display: none;
+    background-color: var(--primary);
+}
+
 table {
     width: 50vw;
     margin: 0 auto;
