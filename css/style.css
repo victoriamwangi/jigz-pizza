@@ -27,6 +27,11 @@ body {
     padding-left: 30vw;
 }
 
+.orderlogo {
+    font-weight: 800;
+    font-size: 2.2vw;
+}
+
 #order {
     background-color: var(--secondary);
     border-radius: 20px;
