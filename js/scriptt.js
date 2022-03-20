@@ -117,9 +117,28 @@ $("#add").click(function() {
         $('.modal .total_div').prepend(
 
             '<p>' + 'TOTAL:' + totalPrice + '</p>'
-        )
+        );
+    });
+    $('#checkout_yes').click(function() {
+        $('.grand_div').show();
+        $('.total_div').hide();
+        $('#final_btn').click(function() {
+            $('.grand_div').hide();
+            $('.final').show();
+            var location = $("#locale").val();
+            $('.final').append(
+                '<p>' + "Your order will be delivered to" + " " + location + '</p>'
+            );
+        });
+    });
+    $('#checkout_no').click(function() {
+        $('.total_div').hide();
+        $('.grand_div').hide();
+        $('.final').show();
 
-
+        $('.modal .final').prepend(
+            '<p>' + 'GRAND TOTAL: ' + totalPrice + '</p>'
+        );
     });
 
 });
