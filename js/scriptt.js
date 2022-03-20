@@ -1,7 +1,8 @@
-function Pizza(size, crust, toppings) {
+function Pizza(size, crust, toppings, totalPrice) {
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
+    this.totalPrice = totalPrice;
 
 }
 
@@ -37,7 +38,7 @@ $("#add").click(function() {
         crustPrice = 300;
 
     }
-    // console.log(crustPrice)
+
     if (toppingsChosen == "Pepperoni") {
         topPrice = 200;
     } else if (toppingsChosen == "Extra Chesse") {
@@ -47,7 +48,7 @@ $("#add").click(function() {
 
     }
     var totalPrice = total(sizePrice, crustPrice, topPrice)
-    console.log(totalPrice);
+
 
 
     $("#pizza_table").append(
@@ -66,7 +67,9 @@ $("#add").click(function() {
         sizeChosen = $("#size :selected").text();
         crustChosen = $('#crust :selected').text();
         toppingsChosen = $('#toppings :selected').text();
-        var grandPrice = 0;
+        var grandPrice = grandPrice + totalPrice;
+        console.log(grandPrice);
+
 
         if (sizeChosen == "Small") {
             sizePrice = 500;
@@ -76,7 +79,7 @@ $("#add").click(function() {
             sizePrice = 700;
 
         }
-        console.log(sizePrice)
+
 
         if (crustChosen == "Crispy") {
             crustPrice = 200;
@@ -86,7 +89,7 @@ $("#add").click(function() {
             crustPrice = 300;
 
         }
-        // console.log(crustPrice)
+
         if (toppingsChosen == "Pepperoni") {
             topPrice = 200;
         } else if (toppingsChosen == "Extra Chesse") {
@@ -95,18 +98,17 @@ $("#add").click(function() {
             topPrice = 200;
 
         }
+
         var totalPrice = total(sizePrice, crustPrice, topPrice);
-        grandPrice = grandPrice + totalPrice;
-        // alert(grandPrice)
-        var newPizza = new Pizza(sizeChosen, crustChosen, toppings);
+
+
+        // var newPizza = new Pizza(sizeChosen, crustChosen, toppings);
         $("#pizza_table").append(
             '<tr>' +
             '<td>' + sizeChosen + " " + sizePrice + '</td>' +
             '<td>' + crustChosen + " " + crustPrice + '</td>' +
             '<td>' + toppingsChosen + " " + topPrice + '</td>' +
             '<td>' + totalPrice + '<td>' +
-            // '<td>' + grandprice + '<td>' +
-
 
             '</tr>'
         );
@@ -118,6 +120,10 @@ $("#add").click(function() {
 
             '<p>' + 'TOTAL:' + totalPrice + '</p>'
         );
+
+
+
+
     });
     $('#checkout_yes').click(function() {
         $('.grand_div').show();
