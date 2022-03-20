@@ -121,6 +121,10 @@ $("#add").click(function() {
     });
     $('#checkout_yes').click(function() {
         $('.grand_div').show();
+        var grandLocation = totalPrice + 200;
+        $('.modal .grand_div').prepend(
+            '<p>' + 'GRAND TOTAL: ' + grandLocation + '</p>'
+        );
         $('.total_div').hide();
         $('#final_btn').click(function() {
             $('.grand_div').hide();
