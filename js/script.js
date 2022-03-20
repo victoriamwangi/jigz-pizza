@@ -1,8 +1,8 @@
-function Pizza(size, crust, toppings, totalPrice) {
+function Pizza(size, crust, toppings, otalPrice) {
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.totalPrice = totalPrice;
+    // this.totalPrice = totalPrice;
 
 }
 
@@ -13,7 +13,6 @@ function total(size, crust, toppings) {
 // function grandTotal(totals, grandPrice) {
 //     return grandPrice + totals;
 // }
-var sizePrice;
 $(document).ready(function() {
     $("#add").click(function() {
         $('table').show();
@@ -68,9 +67,9 @@ $(document).ready(function() {
             sizeChosen = $("#size :selected").text();
             crustChosen = $('#crust :selected').text();
             toppingsChosen = $('#toppings :selected').text();
-            var grandPrice = grandPrice + totalPrice;
+            grandPrice = totalPrice + totalPrice;
             console.log(grandPrice);
-
+            // alert(grandPrice)
 
             if (sizeChosen == "Small") {
                 sizePrice = 500;
@@ -116,19 +115,17 @@ $(document).ready(function() {
 
         });
         $('.submit').click(function() {
+            grandPrice = parseInt(grandPrice + totalPrice);
+            console.log(grandPrice);
             $('#checkout').modal('show');
             $('.modal .total_div').prepend(
 
                 '<p>' + 'TOTAL:' + totalPrice + '</p>'
             );
-
-
-
-
         });
         $('#checkout_yes').click(function() {
             $('.grand_div').show();
-            var grandLocation = totalPrice + 200;
+            var grandLocation = totalPrice + 150;
             $('.modal .grand_div').prepend(
                 '<p>' + 'GRAND TOTAL: ' + grandLocation + '</p>'
             );

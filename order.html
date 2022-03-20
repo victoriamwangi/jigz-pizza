@@ -19,16 +19,15 @@
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="collapse navbar-collapse " id="collapsibleNavId">
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link damn" href="#menu">PIZZA </a>
                 </li>
-
             </ul>
         </div>
     </nav>
-    <div class="container-fluid c-flex">
+    <div class="container-fluid contOrders c-flex">
         <form action="" class="shadow radius c-flex">
             <p>ORDER</p>
             <div class="image">
@@ -62,12 +61,10 @@
                 <th>CRUST</th>
                 <th>TOPPINGS</th>
                 <th>PRICE</th>
-
             </tr>
             <tr></tr>
         </table>
         <div class="btn btn-success submit">SUBMIT</div>
-
 
         <!-- Modal -->
         <div class="modal fade" id="checkout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -79,7 +76,6 @@
                     </div>
                     <div class="modal-body">
                         <div class="total_div">
-
                             <p class="total"></p>
                             <p>Would you like a delivery at an additinal fee of Ksh 150?</p>
                             <button class="btn btn-success" id="checkout_yes">YES</button>
@@ -88,26 +84,57 @@
 
                         <div class="grand_div">
                             <div class="form-group">
-
                                 <label for="">LOCATION</label>
-                                <input type="text" name="" id="locale" class="form-control" placeholder="" aria-describedby="helpId">
+                                <input type="text" name="" id="locale" class="form-control" placeholder="" aria-describedby="helpId" />
                                 <button class="btn btn-success" id="final_btn">SUBMIT</button>
                             </div>
                         </div>
                         <div class="final">
                             <i class="fa-solid fa-circle-check"></i>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/script.js"></script>
+    </div>
+    <div class="footer row r-flex">
+        <div class="col-lg-4" id="logo">
+            <div class="logo">JIGZ</div>
+            <p>A bite of<span> happiness</span></p>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <li>
+                    <a href=""><i class="fas fa-phone px-2"></i>ORDER</a>
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-sign-in px-2"></i>SIGN UP</a>
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-location px-2"></i>LOCATION</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <li>FOLLOW US ON:</li>
+                <li>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">@2022 Gigz Enterprise</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
