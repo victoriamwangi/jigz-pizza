@@ -121,6 +121,15 @@ body {
     font-weight: bold;
 }
 
+.modal img {
+    width: 30vw;
+    height: 20vw;
+}
+
+.modal .t-menu1 {
+    position: relative;
+}
+
 
 /* ORDERS PAGE  */
 
@@ -294,10 +303,5 @@ td {
     }
     .footer i {
         font-size: 1.1vw;
-    }
-    .copyright {
-        background-color: #1e1d13;
-        color: white;
-        text-align: center;
     }
 }
