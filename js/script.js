@@ -14,6 +14,12 @@ function total(size, crust, toppings) {
 //     return grandPrice + totals;
 // }
 $(document).ready(function() {
+
+    $('.pizzas').click(function() {
+        $('.modal').modal('show');
+
+
+    })
     $("#add").click(function() {
         $('table').show();
         sizeChosen = $("#size :selected").text();
@@ -39,9 +45,9 @@ $(document).ready(function() {
 
         }
 
-        if (toppingsChosen == "Pepperoni") {
+        if (toppingsChosen == "Fruity") {
             topPrice = 200;
-        } else if (toppingsChosen == "Extra Chesse") {
+        } else if (toppingsChosen == "Beef") {
             topPrice = 300;
         } else if (toppingsChosen == "Chicken") {
             topPrice = 200;
@@ -90,9 +96,9 @@ $(document).ready(function() {
 
             }
 
-            if (toppingsChosen == "Pepperoni") {
+            if (toppingsChosen == "Fruity") {
                 topPrice = 200;
-            } else if (toppingsChosen == "Extra Chesse") {
+            } else if (toppingsChosen == "Beef") {
                 topPrice = 300;
             } else if (toppingsChosen == "Chicken") {
                 topPrice = 200;

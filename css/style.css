@@ -104,6 +104,23 @@ body {
     padding-left: 3vw;
 }
 
+.modal .home-order {
+    background-color: var(--primary);
+    border: none;
+}
+
+.modal .home-cancel {
+    background-color: var(--secondary);
+    border: none;
+}
+
+.modal .t-menu {
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
 
 /* ORDERS PAGE  */
 
